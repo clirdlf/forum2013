@@ -1,0 +1,63 @@
+// https://sass-lang.com/documentation/modules/color/
+@use 'sass:color';
+
+// See https://getbootstrap.com/docs/5.3/customize/sass/
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+// Bootstrap Icons
+@import '~icons/font/bootstrap-icons.css';
+
+:root {
+    --danger: #466BA2;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+// Additional SCSS goes here
+
+.btn-danger {
+    background-color: var(--danger);
+    border-color: var(--danger);
+
+    $hover_color: color.adjust(#466BA2, $lightness: -10%);
+
+    &:hover {
+        background-color: $hover_color;
+        border-color: $hover_color;
+    }
+}
+
+.dlfs-concurrent {
+    background-color: #f8f9fa;
+}
+
+.text-bg-platinum {
+    background-color: rgb(171, 153, 143);
+    color: #fff;
+}
+
+.text-bg-silver {
+    background-color: rgb(120, 135, 148);
+    color: #fff;
+}
+
+.text-bg-fellowships {
+    background-color: rgb(121, 116, 93);
+    color: #fff;
+}
+
+.text-bg-arl {
+    background-color: rgb(58, 73, 26);
+    color: #fff;
+}
+
+.text-bg-travel {
+    background-color: rgb(116, 148, 31);
+    color: #fff;
+}
