@@ -1,22 +1,60 @@
 <div class="container bg-white py-5">
-  <footer class="align-items-end">
-    <p class="text-end">
-      <img
-        src="{{ '/assets/images/clir-logo.webp' }}"
-        class="ms-3 img-fluid float-end"
-        alt="CLIR logo"
-        width="75"
-      />
+  <footer
+    class="row row-cols-1 row-cols-sm-2 row-cols-md-2 py-5 my-5 border-top"
+  >
+    <div class="col mb-4">
+      <h3>Stay in Touch!</h3>
+      <p>
+        <span class="bi bi-person-rolodex"></span> CLIR+DLF 1800 Diagonal Rd<br />
+        Suite 600<br />
+        Alexandria, VA 22314
+      </p>
 
-      DLF is a program of the
-      <a href="http://www.clir.org/"
-        >Council on Library and Information Resources</a
-      >.<br />
-      Published by the Digital Library Federation, last modified by Eric (admin)
-      on 18 January 2011.<br />
-      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
-        >Some rights reserved</a
-      >. <a href="https://www.clir.org/privacy/">Some notes on privacy</a>.
-    </p>
+      <p>
+        <span class="bi bi-envelope"></span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+
+      <p class="text-body-secondary mt-5">
+        <img
+          src="{{ '/assets/images/clir-logo.webp' }}"
+          class="float-start me-2"
+          alt="CLIR logo"
+          width="36"
+        />
+        DLF if a program of the
+        <a target="_blank" href="https://www.clir.org"
+          >Council on Library and Information Resources</a
+        >
+      </p>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Connect</h5>
+
+      <a href="mailto:{{ site.email }}" class="btn btn-lg btn-secondary">
+        <i class="bi bi-envelope"></i><span class="visually-hidden">Email</span>
+      </a>
+
+      <a href="{{ site.twitter }}" class="btn btn-lg btn-secondary">
+        <i class="bi bi-twitter"></i
+        ><span class="visually-hidden">Twitter</span>
+      </a>
+
+      <a href="{{ site.facebook }}" class="btn btn-lg btn-secondary">
+        <i class="bi bi-facebook"></i
+        ><span class="visually-hidden">Facebook</span>
+      </a>
+
+      <a href="{{ site.linkedin }}" class="btn btn-lg btn-secondary">
+        <i class="bi bi-linkedin"></i
+        ><span class="visually-hidden">LinkedIn</span>
+      </a>
+
+      <a href="{{ site.youtube }}" class="btn btn-lg btn-secondary">
+        <i class="bi bi-youtube"></i
+        ><span class="visually-hidden">YouTube</span>
+      </a>
+    </div>
   </footer>
 </div>

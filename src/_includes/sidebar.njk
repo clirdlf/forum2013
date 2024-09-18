@@ -1,6 +1,18 @@
 <div class="col-md-4">
   <div id="sidebar" class="pt-2">
-    <div class="p-4 box">
+    <div class="p-4 my-4 box bg-light">
+      <h4>Search</h4>
+      <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+      <script src="/pagefind/pagefind-ui.js"></script>
+      <div id="search"></div>
+      <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: '#search', showSubResults: true })
+        })
+      </script>
+    </div>
+
+    <div class="p-4 box border-bottom">
       <h4 class="text-muted">2013 Program Planning Committee</h4>
       <p>
         Aaron Choate<br />
@@ -61,18 +73,6 @@
           <a href="https://www.diglib.org/dlf-events/past/">Past Forums</a>
         </li>
       </ul>
-    </div>
-
-    <div class="p-4 my-4 box">
-      <h4>Search</h4>
-      <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-      <script src="/pagefind/pagefind-ui.js"></script>
-      <div id="search"></div>
-      <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-          new PagefindUI({ element: '#search', showSubResults: true })
-        })
-      </script>
     </div>
 
     <div class="p-4 box">
